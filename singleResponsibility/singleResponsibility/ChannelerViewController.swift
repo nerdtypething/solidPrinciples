@@ -47,10 +47,18 @@ class ChannelerViewController: UIViewController
         // note: the conversion of value string to Int via forced unwrap is dangerous and
         // used for demonstration purposes only.
         // don't do this, kids.
-        self._channels.append(Channel(name: name, value: Int(value)!, description: desc))
+        self.addChannel(name: name, value: Int(value)!, description: desc)
     }
     
-    func printChannelInfo()
+    private func addChannel(name: String, value: Int, description: String)
+    {
+        // note: the conversion of value string to Int via forced unwrap is dangerous and
+        // used for demonstration purposes only.
+        // don't do this, kids.
+        self._channels.append(Channel(name: name, value: value, description: description))
+    }
+    
+    private func printChannelInfo()
     {
         self._channels.forEach({c in
             print("===================")
