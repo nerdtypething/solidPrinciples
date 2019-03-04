@@ -14,6 +14,8 @@
 		ABD61AA9222CE124002A750B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD61AA7222CE124002A750B /* LaunchScreen.storyboard */; };
 		ABD61AB1222CE834002A750B /* Channeler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD61AB0222CE834002A750B /* Channeler.storyboard */; };
 		ABD61AB3222CE91A002A750B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD61AB2222CE91A002A750B /* Channel.swift */; };
+		ABD61AB5222CF282002A750B /* ChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD61AB4222CF282002A750B /* ChannelManager.swift */; };
+		ABD61AB7222CF28D002A750B /* ChannelInfoer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD61AB6222CF28D002A750B /* ChannelInfoer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		ABD61AAA222CE124002A750B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD61AB0222CE834002A750B /* Channeler.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Channeler.storyboard; sourceTree = "<group>"; };
 		ABD61AB2222CE91A002A750B /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		ABD61AB4222CF282002A750B /* ChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelManager.swift; sourceTree = "<group>"; };
+		ABD61AB6222CF28D002A750B /* ChannelInfoer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				ABD61AA5222CE124002A750B /* Assets.xcassets */,
 				ABD61AA7222CE124002A750B /* LaunchScreen.storyboard */,
 				ABD61AAA222CE124002A750B /* Info.plist */,
+				ABD61AB4222CF282002A750B /* ChannelManager.swift */,
+				ABD61AB6222CF28D002A750B /* ChannelInfoer.swift */,
 			);
 			path = singleResponsibility;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 			files = (
 				ABD61AA1222CE123002A750B /* ChannelerViewController.swift in Sources */,
 				ABD61AB3222CE91A002A750B /* Channel.swift in Sources */,
+				ABD61AB7222CF28D002A750B /* ChannelInfoer.swift in Sources */,
 				ABD61A9F222CE123002A750B /* AppDelegate.swift in Sources */,
+				ABD61AB5222CF282002A750B /* ChannelManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
