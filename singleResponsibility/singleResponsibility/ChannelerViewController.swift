@@ -12,6 +12,10 @@ class ChannelerViewController: UIViewController
 {
     private var _channels = [Channel]()
     
+    @IBOutlet weak var channelNameTextField: UITextField!
+    @IBOutlet weak var channelValueTextField: UITextField!
+    @IBOutlet weak var channelDescriptionTextField: UITextField!
+    
     static func create(channels: [Channel]) -> ChannelerViewController
     {
         let sb = UIStoryboard(name: "Channeler", bundle: nil)
@@ -33,6 +37,19 @@ class ChannelerViewController: UIViewController
         self.printChannelInfo()
     }
     
+    @IBAction func onAddChannelTapped(_ sender: Any)
+    {
+        guard let name = channelNameTextField.text, let value = channelValueTextField.text, let desc = channelDescriptionTextField.text else
+        {
+            return
+        }
+        
+        // note: the conversion of value string to Int via forced unwrap is dangerous and
+        // used for demonstration purposes only.
+        // don't do this, kids.
+        self._channels.append(Channel(name: name, value: Int(value)!, description: desc))
+    }
+    
     func printChannelInfo()
     {
         self._channels.forEach({c in
@@ -43,4 +60,3 @@ class ChannelerViewController: UIViewController
         })
     }
 }
-

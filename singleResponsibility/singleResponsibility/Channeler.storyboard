@@ -21,8 +21,84 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-wN-uI0">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cG-Zc-V31">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="channel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4O-IG-Wg3">
+                                                <rect key="frame" x="10" y="50" width="60.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-2g-WAD" userLabel="channelNameTextField">
+                                                <rect key="frame" x="115" y="45.5" width="250" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="kzs-fi-smN"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3a-wW-uZ0">
+                                                <rect key="frame" x="10" y="110.5" width="40.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpi-Pv-FLq" userLabel="channelValueTextField">
+                                                <rect key="frame" x="115" y="106" width="250" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="Po6-kK-U7t"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvr-fM-oho">
+                                                <rect key="frame" x="10" y="171" width="86" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-z1-pog" userLabel="channelDescriptionTextField">
+                                                <rect key="frame" x="115" y="166.5" width="250" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="tR1-6s-iF3"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTB-2k-E14">
+                                                <rect key="frame" x="129" y="241" width="117" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="add channel"/>
+                                                <connections>
+                                                    <action selector="onAddChannelTapped:" destination="M3u-KH-17W" eventType="touchUpInside" id="laW-pE-NUc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hhl-z1-pog" firstAttribute="centerY" secondItem="dvr-fM-oho" secondAttribute="centerY" id="0JH-Oz-SnW"/>
+                                            <constraint firstItem="dvr-fM-oho" firstAttribute="top" secondItem="k3a-wW-uZ0" secondAttribute="bottom" constant="40" id="A5T-x8-rUa"/>
+                                            <constraint firstItem="I4O-IG-Wg3" firstAttribute="leading" secondItem="0cG-Zc-V31" secondAttribute="leading" constant="10" id="Bet-gv-2bQ"/>
+                                            <constraint firstItem="dvr-fM-oho" firstAttribute="leading" secondItem="0cG-Zc-V31" secondAttribute="leading" constant="10" id="BpH-56-qmC"/>
+                                            <constraint firstAttribute="trailing" secondItem="jsc-2g-WAD" secondAttribute="trailing" constant="10" id="DgK-PA-1kW"/>
+                                            <constraint firstItem="qpi-Pv-FLq" firstAttribute="centerY" secondItem="k3a-wW-uZ0" secondAttribute="centerY" id="FKh-gU-m3D"/>
+                                            <constraint firstItem="k3a-wW-uZ0" firstAttribute="top" secondItem="I4O-IG-Wg3" secondAttribute="bottom" constant="40" id="JAP-2F-CBq"/>
+                                            <constraint firstItem="aTB-2k-E14" firstAttribute="centerX" secondItem="0cG-Zc-V31" secondAttribute="centerX" id="JeN-Yn-DyT"/>
+                                            <constraint firstAttribute="trailing" secondItem="hhl-z1-pog" secondAttribute="trailing" constant="10" id="Pgz-ua-Frn"/>
+                                            <constraint firstItem="I4O-IG-Wg3" firstAttribute="top" secondItem="0cG-Zc-V31" secondAttribute="top" constant="50" id="d34-Vl-XUY"/>
+                                            <constraint firstAttribute="bottom" secondItem="aTB-2k-E14" secondAttribute="bottom" constant="20" id="d4I-fQ-B3M"/>
+                                            <constraint firstItem="k3a-wW-uZ0" firstAttribute="leading" secondItem="0cG-Zc-V31" secondAttribute="leading" constant="10" id="k8f-4b-I10"/>
+                                            <constraint firstAttribute="trailing" secondItem="qpi-Pv-FLq" secondAttribute="trailing" constant="10" id="mG7-k5-Rn3"/>
+                                            <constraint firstItem="aTB-2k-E14" firstAttribute="top" secondItem="dvr-fM-oho" secondAttribute="bottom" priority="20" constant="30" id="oVt-0H-SWy"/>
+                                            <constraint firstItem="jsc-2g-WAD" firstAttribute="centerY" secondItem="I4O-IG-Wg3" secondAttribute="centerY" id="onP-Js-D41"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fq6-3B-Mxi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <rect key="frame" x="0.0" y="608" width="375" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                         <state key="normal" title="print channel info"/>
                                         <connections>
@@ -41,6 +117,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9K2-hD-DVR"/>
                     </view>
+                    <connections>
+                        <outlet property="channelDescriptionTextField" destination="hhl-z1-pog" id="2h5-yg-XSE"/>
+                        <outlet property="channelNameTextField" destination="jsc-2g-WAD" id="GjW-8v-1jV"/>
+                        <outlet property="channelValueTextField" destination="qpi-Pv-FLq" id="aiK-BS-f6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6Z-1k-KfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
