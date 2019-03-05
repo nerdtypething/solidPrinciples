@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                Channel(name: "nickelodeon", value: 98, description: "kids stuff"),
                                Channel(name: "hbo", value: 200, description: "game of thrones stuff")]
         
+        // 1. snippet: adRootVc
+        
         let vc = ChannelerViewController.create(channels: initialChannels)
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

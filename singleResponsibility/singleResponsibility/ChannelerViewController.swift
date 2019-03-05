@@ -16,6 +16,8 @@ class ChannelerViewController: UIViewController
     @IBOutlet weak var channelValueTextField: UITextField!
     @IBOutlet weak var channelDescriptionTextField: UITextField!
     
+    // 1. snippet: cvcCreate
+    
     static func create(channels: [Channel]) -> ChannelerViewController
     {
         let sb = UIStoryboard(name: "Channeler", bundle: nil)
@@ -48,6 +50,8 @@ class ChannelerViewController: UIViewController
         // used for demonstration purposes only.
         // don't do this, kids.
         self.addChannel(name: name, value: Int(value)!, description: desc)
+        
+        // 2. snippet: cvcOnAddChannel
     }
     
     private func addChannel(name: String, value: Int, description: String)
@@ -66,5 +70,7 @@ class ChannelerViewController: UIViewController
             print("value: \(c.value)")
             print("description: \(c.description)")
         })
+        
+        // 3. snippet: cvcPrintChannel
     }
 }
