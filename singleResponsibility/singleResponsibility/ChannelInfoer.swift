@@ -10,6 +10,8 @@ import Foundation
 
 class ChannelInfoer
 {
+    // 1. ciprintchannel
+    
     func printChannelInfo(channels: [Channel])
     {
         channels.forEach({c in
