@@ -12,6 +12,11 @@ class ChannelInfoer
 {
     func printChannelInfo(channels: [Channel])
     {
-        
+        channels.forEach({c in
+            print("===================")
+            print("channel: \(c.name)")
+            print("value: \(c.value)")
+            print("description: \(c.description)")
+        })
     }
 }
