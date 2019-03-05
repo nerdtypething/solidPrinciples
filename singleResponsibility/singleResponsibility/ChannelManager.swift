@@ -12,6 +12,8 @@ class ChannelManager
 {
     private var _channels: [String: Channel] = [:]
     
+    // 3. snippet: cminit
+
     init(channels: [Channel])
     {
         channels.forEach({c in
@@ -19,11 +21,15 @@ class ChannelManager
         })
     }
     
+    // 2. snippet: cmgetchannel
+    
     func getChannels() -> [Channel]
     {
         return Array(_channels.values)
     }
     
+    // 1. snippet: cmaddchannel
+
     func addChannel(name: String, value: Int, description: String)
     {
         let channelExists = _channels.contains(where: { (key, value) -> Bool in
