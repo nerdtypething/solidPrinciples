@@ -16,6 +16,11 @@
 		AB0824C3223763CE007C2988 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0824C2223763CE007C2988 /* Router.swift */; };
 		AB0824C5223763D6007C2988 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0824C4223763D6007C2988 /* RouterType.swift */; };
 		AB0824C7223765CA007C2988 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0824C6223765CA007C2988 /* RouterManager.swift */; };
+		ABBB61C722376F0200254549 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB61C622376F0200254549 /* RouterProtocol.swift */; };
+		ABBB61C922376FF100254549 /* BasicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB61C822376FF100254549 /* BasicRouter.swift */; };
+		ABBB61CB223771BE00254549 /* DualRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB61CA223771BE00254549 /* DualRouter.swift */; };
+		ABBB61CD223771E100254549 /* FancyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB61CC223771E100254549 /* FancyRouter.swift */; };
+		ABBB61CF223771FE00254549 /* DualFancyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB61CE223771FE00254549 /* DualFancyRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		AB0824C2223763CE007C2988 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		AB0824C4223763D6007C2988 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		AB0824C6223765CA007C2988 /* RouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
+		ABBB61C622376F0200254549 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		ABBB61C822376FF100254549 /* BasicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRouter.swift; sourceTree = "<group>"; };
+		ABBB61CA223771BE00254549 /* DualRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualRouter.swift; sourceTree = "<group>"; };
+		ABBB61CC223771E100254549 /* FancyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyRouter.swift; sourceTree = "<group>"; };
+		ABBB61CE223771FE00254549 /* DualFancyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualFancyRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,11 @@
 				AB0824C2223763CE007C2988 /* Router.swift */,
 				AB0824C4223763D6007C2988 /* RouterType.swift */,
 				AB0824C6223765CA007C2988 /* RouterManager.swift */,
+				ABBB61C622376F0200254549 /* RouterProtocol.swift */,
+				ABBB61C822376FF100254549 /* BasicRouter.swift */,
+				ABBB61CA223771BE00254549 /* DualRouter.swift */,
+				ABBB61CC223771E100254549 /* FancyRouter.swift */,
+				ABBB61CE223771FE00254549 /* DualFancyRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -156,11 +171,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0824C3223763CE007C2988 /* Router.swift in Sources */,
+				ABBB61C722376F0200254549 /* RouterProtocol.swift in Sources */,
+				ABBB61CD223771E100254549 /* FancyRouter.swift in Sources */,
 				AB0824B0223759FA007C2988 /* ViewController.swift in Sources */,
+				ABBB61CF223771FE00254549 /* DualFancyRouter.swift in Sources */,
 				AB0824C5223763D6007C2988 /* RouterType.swift in Sources */,
+				ABBB61CB223771BE00254549 /* DualRouter.swift in Sources */,
 				AB0824C022375F2B007C2988 /* RouterPickerDelegate.swift in Sources */,
 				AB0824C7223765CA007C2988 /* RouterManager.swift in Sources */,
 				AB0824AE223759FA007C2988 /* AppDelegate.swift in Sources */,
+				ABBB61C922376FF100254549 /* BasicRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

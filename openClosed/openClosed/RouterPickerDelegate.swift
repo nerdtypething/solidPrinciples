@@ -11,8 +11,10 @@ import UIKit
 
 class RouterPickerDelegate: NSObject, UIPickerViewDelegate, UIPickerViewDataSource
 {
+    // 1. change to protocol type array
     private var _routers = [Router]()
     
+    // 2. change to protocol type array param
     init(routers: [Router])
     {
         self._routers = routers

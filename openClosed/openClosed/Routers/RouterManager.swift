@@ -10,11 +10,14 @@ import Foundation
 
 class RouterManager
 {
+    // 1: change to protocol-type array
     var managedRouters: [Router]
     
     init()
     {
         self.managedRouters = [Router(type: .Basic, name: "Standard Router"),
                                Router(type: .DualBand, name: "Dually")]
+        
+        // 2: ocRouterManagerCollection
     }
 }
