@@ -9,9 +9,3 @@
 import Foundation
 
 // Snippet 1: ocRouterProtocol
-
-protocol RouterProtocol
-{
-    var routerName: String { get set}
-    func getInfo() -> String
-}
