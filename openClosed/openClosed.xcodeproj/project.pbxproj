@@ -16,6 +16,9 @@
 		AB0824C3223763CE007C2988 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0824C2223763CE007C2988 /* Router.swift */; };
 		AB0824C5223763D6007C2988 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0824C4223763D6007C2988 /* RouterType.swift */; };
 		AB0824C7223765CA007C2988 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0824C6223765CA007C2988 /* RouterManager.swift */; };
+		ABBF605C22376AFE00875B56 /* BasicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF605B22376AFE00875B56 /* BasicRouter.swift */; };
+		ABBF605E22376B1800875B56 /* DualBandRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF605D22376B1800875B56 /* DualBandRouter.swift */; };
+		ABBF606022376B4300875B56 /* FancyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF605F22376B4300875B56 /* FancyRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		AB0824C2223763CE007C2988 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		AB0824C4223763D6007C2988 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		AB0824C6223765CA007C2988 /* RouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
+		ABBF605B22376AFE00875B56 /* BasicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRouter.swift; sourceTree = "<group>"; };
+		ABBF605D22376B1800875B56 /* DualBandRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualBandRouter.swift; sourceTree = "<group>"; };
+		ABBF605F22376B4300875B56 /* FancyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,12 @@
 		AB0824C1223763A7007C2988 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				AB0824C2223763CE007C2988 /* Router.swift */,
 				AB0824C4223763D6007C2988 /* RouterType.swift */,
 				AB0824C6223765CA007C2988 /* RouterManager.swift */,
+				AB0824C2223763CE007C2988 /* Router.swift */,
+				ABBF605B22376AFE00875B56 /* BasicRouter.swift */,
+				ABBF605D22376B1800875B56 /* DualBandRouter.swift */,
+				ABBF605F22376B4300875B56 /* FancyRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -158,8 +167,11 @@
 				AB0824C3223763CE007C2988 /* Router.swift in Sources */,
 				AB0824B0223759FA007C2988 /* ViewController.swift in Sources */,
 				AB0824C5223763D6007C2988 /* RouterType.swift in Sources */,
+				ABBF605E22376B1800875B56 /* DualBandRouter.swift in Sources */,
+				ABBF605C22376AFE00875B56 /* BasicRouter.swift in Sources */,
 				AB0824C022375F2B007C2988 /* RouterPickerDelegate.swift in Sources */,
 				AB0824C7223765CA007C2988 /* RouterManager.swift in Sources */,
+				ABBF606022376B4300875B56 /* FancyRouter.swift in Sources */,
 				AB0824AE223759FA007C2988 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

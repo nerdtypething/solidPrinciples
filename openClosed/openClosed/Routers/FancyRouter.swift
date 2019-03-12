@@ -1,5 +1,5 @@
 //
-//  RouterType.swift
+//  FancyRouter.swift
 //  openClosed
 //
 //  Created by Ruben Hansen-Rojas on 3/11/19.
@@ -8,9 +8,10 @@
 
 import Foundation
 
-enum RouterType
+class FancyRouter: Router
 {
-    case Basic
-    case DualBand
-    case Fancy
+    override func getInfo() -> String
+    {
+        return "I've got sick LEDs!"
+    }
 }
