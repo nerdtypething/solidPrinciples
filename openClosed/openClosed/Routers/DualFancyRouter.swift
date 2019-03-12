@@ -19,5 +19,4 @@ class DualFancyRouter
     }
     
     // 2: ocDualFancyRouterProtocol
-
 }
