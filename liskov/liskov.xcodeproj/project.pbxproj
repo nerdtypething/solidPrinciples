@@ -13,7 +13,6 @@
 		ABC67D012249CF1A006B0DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC67D002249CF1A006B0DEB /* Assets.xcassets */; };
 		ABC67D042249CF1A006B0DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC67D022249CF1A006B0DEB /* LaunchScreen.storyboard */; };
 		ABC67D0C2249D286006B0DEB /* ValidatingForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC67D0B2249D286006B0DEB /* ValidatingForm.storyboard */; };
-		ABC67D162249DD08006B0DEB /* ValidatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC67D152249DD08006B0DEB /* ValidatingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		ABC67D032249CF1A006B0DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC67D052249CF1A006B0DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC67D0B2249D286006B0DEB /* ValidatingForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValidatingForm.storyboard; sourceTree = "<group>"; };
-		ABC67D152249DD08006B0DEB /* ValidatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				ABC67CFD2249CF19006B0DEB /* Main.storyboard */,
 				ABC67D0B2249D286006B0DEB /* ValidatingForm.storyboard */,
 				ABC67CFB2249CF18006B0DEB /* ValidatingFormViewController.swift */,
-				ABC67D152249DD08006B0DEB /* ValidatingTextField.swift */,
 				ABC67D002249CF1A006B0DEB /* Assets.xcassets */,
 				ABC67D022249CF1A006B0DEB /* LaunchScreen.storyboard */,
 				ABC67D052249CF1A006B0DEB /* Info.plist */,
@@ -143,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC67CFC2249CF18006B0DEB /* ValidatingFormViewController.swift in Sources */,
-				ABC67D162249DD08006B0DEB /* ValidatingTextField.swift in Sources */,
 				ABC67CFA2249CF18006B0DEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
