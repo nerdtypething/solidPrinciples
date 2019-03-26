@@ -10,11 +10,11 @@ import UIKit
 
 class ValidatingFormViewController: UIViewController
 {
-
+    @IBOutlet weak var stackView: UIStackView!
+    
+    // snippet: lspValidatingVCCreate
     private var _textFields = [ValidatingTextField]()
     private var _errorLabels = [UILabel]()
-    
-    @IBOutlet weak var stackView: UIStackView!
     
     static func create(textFields: [ValidatingTextField]) -> ValidatingFormViewController
     {
@@ -25,14 +25,8 @@ class ValidatingFormViewController: UIViewController
         
         return vc
     }
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
 
+    // snippet: lspValidatingVCLayout
     override func viewWillAppear(_ animated: Bool)
     {
         for (index, tf) in _textFields.enumerated()
@@ -119,6 +113,7 @@ class ValidatingFormViewController: UIViewController
 
     @IBAction func onSubmitTapped(_ sender: Any)
     {
+        // snippet: lspValidatingVCValidate
         for (index, tf) in _textFields.enumerated()
         {
             self._errorLabels[index].text = tf.validate()

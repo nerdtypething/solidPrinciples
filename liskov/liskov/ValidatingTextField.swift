@@ -34,6 +34,7 @@ class ValidatingTextField: UITextField
     }
 }
 
+// snippet: lspNameTextField
 class NameTextField: ValidatingTextField
 {
     override init()
@@ -63,6 +64,7 @@ class NameTextField: ValidatingTextField
     }
 }
 
+// snippet: lspEmailTextField
 class EmailTextField: ValidatingTextField
 {
     override init()
@@ -99,6 +101,7 @@ class EmailTextField: ValidatingTextField
     }
 }
 
+// snippet: lspPhoneTextField
 class PhoneTextField: ValidatingTextField
 {
     override init()
@@ -139,6 +142,7 @@ class PhoneTextField: ValidatingTextField
     }
 }
 
+// snippet: lspCommentTextField
 class CommentTextField: ValidatingTextField
 {
     override init()
