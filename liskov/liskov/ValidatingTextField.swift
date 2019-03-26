@@ -54,10 +54,45 @@ class NameTextField: ValidatingTextField
             return "Field is required."
         }
         
+        if (txt.isEmpty)
+        {
+            return "Field is required."
+        }
+        
+        return String()
+    }
+}
+
+class EmailTextField: ValidatingTextField
+{
+    override init()
+    {
+        super.init()
+        self.label = "Email:"
+    }
+    
+    required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+    }
+    
+    override func validate() -> String
+    {
+        guard let txt = self.text else
+        {
+            return "Field is required."
+        }
         
         if (txt.isEmpty)
         {
             return "Field is required."
+        }
+        
+        let regex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
+        
+        if (regex.firstMatch(in: txt, options: [], range: NSRange(location: 0, length: txt.count)) == nil)
+        {
+            return "Enter valid email."
         }
         
         return String()
@@ -84,12 +119,22 @@ class PhoneTextField: ValidatingTextField
             return "Field is required."
         }
         
-        
         if (txt.isEmpty)
         {
             return "Field is required."
         }
         
+        let lettersRange = txt.rangeOfCharacter(from: .letters)
+        
+        if (lettersRange != nil)
+        {
+            return "Numbers only."
+        }
+        
+        if (txt.count < 10)
+        {
+            return "Enter valid phone number."
+        }
         return String()
     }
 }
@@ -109,6 +154,16 @@ class CommentTextField: ValidatingTextField
     
     override func validate() -> String
     {
+        guard let txt = self.text else
+        {
+            return "Field is required."
+        }
+        
+        if (txt.isEmpty)
+        {
+            return "Field is required."
+        }
+        
         return String()
     }
 }

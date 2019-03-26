@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let textViews = [NameTextField(), PhoneTextField(), CommentTextField()]
+        let textViews = [EmailTextField(), PhoneTextField(), CommentTextField()]
         
         let validatingVc = ValidatingFormViewController.create(textFields: textViews)
         self.window?.rootViewController = validatingVc
