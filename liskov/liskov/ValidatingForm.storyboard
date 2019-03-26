@@ -22,10 +22,49 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-sA-FW8">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-gf-tNs" userLabel="ContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLD-dY-vkE" userLabel="CommentInputTextField">
+                                                        <rect key="frame" x="115" y="20" width="250" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="250" id="D0S-yT-Jlf"/>
+                                                            <constraint firstAttribute="height" constant="30" id="uZQ-Cp-sJF"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBU-x9-hnU" userLabel="TitleLabel">
+                                                        <rect key="frame" x="10" y="25" width="100" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ErrorLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="002-yq-8Yw" userLabel="ErrorLabel">
+                                                        <rect key="frame" x="120" y="55" width="250" height="68"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="hBU-x9-hnU" firstAttribute="centerY" secondItem="bLD-dY-vkE" secondAttribute="centerY" id="3wZ-9u-mqt"/>
+                                                    <constraint firstItem="hBU-x9-hnU" firstAttribute="leading" secondItem="fIh-gf-tNs" secondAttribute="leading" constant="10" id="G4z-lk-HHS"/>
+                                                    <constraint firstItem="002-yq-8Yw" firstAttribute="leading" secondItem="bLD-dY-vkE" secondAttribute="leading" constant="5" id="K8p-a7-Z76"/>
+                                                    <constraint firstItem="bLD-dY-vkE" firstAttribute="leading" secondItem="hBU-x9-hnU" secondAttribute="trailing" constant="5" id="OdB-3y-gPr"/>
+                                                    <constraint firstItem="bLD-dY-vkE" firstAttribute="top" secondItem="fIh-gf-tNs" secondAttribute="top" constant="20" id="crf-8O-nPp"/>
+                                                    <constraint firstItem="002-yq-8Yw" firstAttribute="top" secondItem="bLD-dY-vkE" secondAttribute="bottom" constant="5" id="gOl-1A-4zX"/>
+                                                    <constraint firstItem="002-yq-8Yw" firstAttribute="width" secondItem="bLD-dY-vkE" secondAttribute="width" id="gYD-uM-KyC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bLD-dY-vkE" secondAttribute="trailing" constant="10" id="h7A-jQ-4fd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="002-yq-8Yw" secondAttribute="bottom" constant="5" id="vhn-Pe-asa"/>
+                                                </constraints>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edz-9b-pCT">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                                <rect key="frame" x="0.0" y="128" width="375" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
@@ -55,6 +94,8 @@
                         <viewLayoutGuide key="safeArea" id="QsQ-FE-z2O"/>
                     </view>
                     <connections>
+                        <outlet property="commentErrorLabel" destination="002-yq-8Yw" id="odc-bH-mja"/>
+                        <outlet property="commentInputTextField" destination="bLD-dY-vkE" id="0d4-zd-p2f"/>
                         <outlet property="stackView" destination="hhe-sA-FW8" id="XZg-yR-vn4"/>
                     </connections>
                 </viewController>
