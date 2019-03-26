@@ -18,11 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // snippet: lspAppDelegate
-        let textViews = [CommentTextField()]
         
-        let validatingVc = ValidatingFormViewController.create(textFields: textViews)
-        self.window?.rootViewController = validatingVc
-        self.window?.makeKeyAndVisible()
         
         return true
     }
