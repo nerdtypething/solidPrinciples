@@ -1,0 +1,16 @@
+//
+//  IRestaurant.swift
+//  interfaceSegregation
+//
+//  Created by Ruben Hansen-Rojas on 4/22/19.
+//  Copyright © 2019 me. All rights reserved.
+//
+
+import Foundation
+
+protocol RestaurantProtocol
+{
+    func serveBreakfast()
+    func serveLunch()
+    func serveDinner()
+}
