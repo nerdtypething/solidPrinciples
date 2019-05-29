@@ -16,5 +16,10 @@ namespace dependencyInversion
             // does stuff
           
         }
+
+        public Payment[] GetPayments()
+        {
+            return _dataClient.GetPayments();
+        }
     }
 }
